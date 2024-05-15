@@ -1,0 +1,162 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    border-radius: 10px;
+    width: 660px;
+    height: 493px;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: row;
+}
+
+.card .imageCard {
+    width: 56%;
+    height: 100%;
+}
+
+.card .imageCard img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.card .inf-card {
+    width: 44%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 38px;
+    font-family: 'Montserrat';
+}
+
+.inf-card .productType {
+    font-size: 12px;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 0.5em;
+}
+
+.inf-card .productBrand {
+    font-size: 36px;
+    font-weight: bold;
+    color: hsl(0, 0%, 0%);
+    font-family: 'Fraunces';
+    line-height: 1;
+    margin-top: -15px;
+}
+
+.inf-card .productDescription {
+    margin-top: -10px;
+    font-size: 16px;
+    line-height: 26px;
+    color: gray;
+}
+
+.inf-card .productPrice {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.inf-card .productPrice p {
+    display: flex;
+    align-items: center;
+    font-family: 'Fraunces';
+}
+
+.productPrice .offer-price {
+    font-size: 34px;
+    font-weight: bold;
+    color: hsl(158, 36%, 37%);;
+    margin-right: 24px;
+}
+
+.productPrice .real-price {
+    font-size: 14px;
+    text-decoration: line-through;
+    color: gray
+}
+
+.inf-card .button {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3px;
+
+    width: 100%;
+    border-radius: 10px;
+    background-color: hsl(158, 36%, 37%);
+}
+
+.inf-card .button img {
+    width: 6%;
+}
+
+.inf-card .button a {
+    text-decoration: none;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    color: hsl(0, 0%, 100%);
+}
+
+.inf-card .button:hover {
+    background-color: hsl(156, 42%, 18%);
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 60px 20px 60px 20px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin: 0;
+        width: 100%;
+    }
+
+    .card .imageCard {
+        width: 100%;
+        height: 100%;
+    }
+
+    .card .imageCard img {
+        width: 100%;
+        height: 260px;
+        border-radius: 10px 10px 0px 0px;
+        object-fit: cover;
+    }
+
+    .card .inf-card {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: 80%;
+        margin: 0px 0px 0px 0px;
+        padding: 30px;
+    }
+
+    .inf-card .button {
+        width: 100%;
+    }
+
+    .inf-card .productDescription {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+}
